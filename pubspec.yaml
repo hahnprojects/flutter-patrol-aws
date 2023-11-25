@@ -1,0 +1,33 @@
+name: patrolaws
+description: "PoC for running Flutter tests with patrol on AWS device farm"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_lints: ^3.0.1
+  flutter_test:
+    sdk: flutter
+  patrol: ^3.0.3
+
+flutter:
+  uses-material-design: true
+  generate: true
+  assets:
+    - assets/images/
+
+patrol:
+  app_name: Patrol AWS PoC
+  android:
+    package_name: com.hahnpro.patrolaws
+  ios:
+    bundle_id: com.hahnpro.patrolaws
