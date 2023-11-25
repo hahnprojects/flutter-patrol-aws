@@ -1,7 +1,5 @@
 name: patrolaws
 description: "PoC for running Flutter tests with patrol on AWS device farm"
-
-# Prevent accidental publishing to pub.dev.
 publish_to: 'none'
 
 version: 1.0.0+1
@@ -16,17 +14,20 @@ dependencies:
     sdk: flutter
 
 dev_dependencies:
+  flutter_lints: ^3.0.1
   flutter_test:
     sdk: flutter
-
-  flutter_lints: ^2.0.0
+  patrol: ^3.0.3
 
 flutter:
   uses-material-design: true
-
-  # Enable generation of localized Strings from arb files.
   generate: true
-
   assets:
-    # Add assets from the images directory to the application.
     - assets/images/
+
+patrol:
+  app_name: Patrol AWS PoC
+  android:
+    package_name: com.hahnpro.patrolaws
+  ios:
+    bundle_id: com.hahnpro.patrolaws
