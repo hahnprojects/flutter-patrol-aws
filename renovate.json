@@ -1,0 +1,10 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:base", ":prHourlyLimitNone", "group:allNonMajor"],
+  "ignoreDeps": [],
+  "ignorePaths": [],
+  "rangeStrategy": "bump",
+  "schedule": ["before 10am"],
+  "semanticCommits": "enabled",
+  "semanticCommitType": "build"
+}
