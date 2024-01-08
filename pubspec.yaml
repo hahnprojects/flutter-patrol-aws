@@ -5,7 +5,7 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.2.0 <4.0.0'
+  sdk: '>=3.2.4 <4.0.0'
 
 dependencies:
   flutter:
@@ -17,7 +17,7 @@ dev_dependencies:
   flutter_lints: ^3.0.1
   flutter_test:
     sdk: flutter
-  patrol: ^3.0.3
+  patrol: ^3.4.0
 
 flutter:
   uses-material-design: true
